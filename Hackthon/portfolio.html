@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+      <meta http-equiv="CONTENT-TYPE" content="text/html"; charset=UTF-8/>
+      <meta name="veiwport"content="width=device-width,initial-scale=1"/>
+      <title>PLP Hackthon exercise</title>
+    </head> 
+
+      <div class="top">
+     <p><h2> Portfolio
+    <a href="https://drive.google.com/file/d/1Qq2gXx4dWMhv2c8eLhydLDPq1k4cI-Nc/view?usp=drivesdk"><button class="button-head">DOWNLOAD CV</button></a>
+     </h2></p>
+      </div>
+      
+  <body>
+<link rel="stylesheet" href="portfolio.css">
+        <div class="tab-container">
+          <div class=""><img  src="IMG_20250403_192824.jpg"/></div>
+          <!-- opentab() in the div class tablinks calls the script funtion to affect the tablinks  -->
+        <div class="tablinks" onclick="opentab('about')"><f>About me</f></div>
+        <div class="tablinks" onclick="opentab('Education')"><f>Education</f></div>
+        <div class="tablinks" onclick="opentab('interests')"><f>Interests</f></div>
+        <div class="tablinks" onclick="opentab('projects')"><f>Projects</f></div>
+        <div class="tablinks" onclick="opentab('contacts')"><f>Contact Me</f></div>
+       </div>   
+
+ <!--Tab content--> 
+      <!-- class active-tab symbolizes a selected tab. -->       
+      <div id="open" onloadstart="hide('open')" class="default">
+        <p> Hey There! Welcome To my Portfolio</p>
+      </div>
+
+<div id="about"class="tab-content"  >
+      <h2>About Me:</h2>
+     <p>Hi! I'm Fadhili, a passionate developer with a love for creating 
+        functional and beautiful web-sites and quality 
+        java applications.
+      </p>
+      <p>I have profound knowledge to various programing languages; visual basic, HTML,
+         CSS, JAVA, C++, C, python, JavaSript, PHP and MySQL.
+        I particularly major in software/application development.  </p>
+        
+</div>
+      <div id="Education" class="tab-content" >
+           <p><h2>Educational background</h2>
+           I am a student at Zetech University taking A course in Software Engineering
+      I am currently in my third year of learning and skill sharpening.
+          <a href="https://drive.google.com/file/d/1Qq2gXx4dWMhv2c8eLhydLDPq1k4cI-Nc/view?usp=drivesdk"download>Download CV</a>
+          </p>
+      </div>
+      <div id="interests" class="tab-content">
+        <h2>Interests</h2>
+        As a programmer and a software Engineer, finding a solution to problems is a skill that I proudly protary.
+        I am driven by the need to find and solve puzzles that can create a channge in the advancing technological fields;
+
+        <ul>
+        <li>Web Development: Exploring modern frameworks and best practices.
+        <li>Application development: Application development in java language, Visual Basic and C++.
+        <li> Tech innovations: Keeping up with the emerging trends in technology and Learning the most marketable languages in the market
+        </ul>
+    </p>
+
+
+      </div>
+      <div id="projects" class="tab-content">    
+
+        <p>
+            <h2> Projects</h2>
+            <ol type="1" >
+             <li><b><a href="https://github.com/FadhiliMumo/School-project.git"> Project 1:</b></a>
+              The project in developement is an interactive application developed using java and MySQL languages. 
+              The Applicaton is a lesson planner for teachers and contains the 
+              fundamental tools required for lesson planning like; the event schedular, objective display and an interactive timetable etc.
+              <p>This project is one that show cases my ability to develop a desktop application using java or rather an object-oriented language.</p> <br>         
+          </ol>
+         </p>
+
+      </div>
+
+      <div id="contacts" class="tab-content">    
+       <p>
+         <p>Feel free to reach out to me through:</p>
+          <div class="row">
+            <div class="column"> Contact me via! Email:
+              <a href="mailto: fadhilimumo3673@gmail.com">Email</a>
+          </div>
+          <div class="column">
+          Telephone: 
+          <a href="tel:+254787602713">+254787602713</a>
+          </div>
+          </div>
+          <div class="row">
+            <div class="column">
+          Github profile:
+          <a href="https://github.com/FadhiliMumo"> FadhiliMumo </a>
+         </div>
+         <div class="column">
+          LinkedIn follow me: 
+          <a href="https://linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=fadhili-mumo-22935a285">Fadhili Mumo</a>
+          </div>
+          </div>
+          <div class="row">
+          <div class="column">
+          Instagram:
+          <a href="https://www.linkedin.com/in/fadhili-mumo-22935a285?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Fadhili</a>
+          </div>
+          </div>
+          </div>
+       </p>
+        
+</div>
+<!-- creating a function called opentab with parameters (tabId) -->
+<script>              
+                  function opentab(tabId){
+                   // Decalring a variable and storing the tabcontent value into it using method document.getElementsByClassName() -->
+                      var tabContents=document.getElementsByClassName('tab-content');
+                      var hide=document.getElementsByClassName('default');                      
+                        //incrementing the value of the tab dispaly on each click using the for function
+                        //assigning the value of i to the tabContents and hidding the previous values of the 
+                        //[i] containing the tab contents using tabContents[i].style.display='none'; -->  
+                      for(var i=0;i<tabContents.length; i++){
+                            tabContents[i].style.display='none';                            
+                       }
+                       for(var i=0;i<hide.length; i++){
+                        hide[i].style.display='none';
+                   }
+                        var tabs=document.getElementsByClassName('active-tab');
+                        //incrementing the value of the tab display on each click using the for function
+                        //assigning the value of i to the tabContents and removing the current content of active tab of the 
+                        for(var i=0;i<tabs.length;i++){
+                            tabs[1].classList.remove('tab-content');
+                        }
+                        document.getElementById(tabId).style.display='block';                        
+                        //creating the connection between the function and the onlick action listerner.
+                        document.querySelector('onclick="openTab(\''+tabId+'\')"]').classList.add('active-tab');
+                    }
+                    function hide(){
+                      if(opentab(tabId)){
+                        document.getElementById('open').style.display='none'
+                      }
+                    }
+            </script>
+        </body> 
+</html>
