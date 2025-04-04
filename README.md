@@ -5,7 +5,7 @@ The following simple project is a portfolio developed in html.
 It is divided into five major sections;   
     The first section contains the details of the subject owner.
     The second section contains the education background
-    the Trird contains the interests of the owner
+    The Third contains the interests of the owner
     The fourth contains the Projects in development.
 
     1. The user interface
