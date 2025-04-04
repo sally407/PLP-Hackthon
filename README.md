@@ -55,7 +55,8 @@ The navigation through the tablinks is made possible by a javasript function bel
 The script function is then called to take effect on the tablinks using {
     <div class="tablinks" onclick="opentab('tab ID')"><f>Tab name</f></div>} 
 The javascript function is made to coordinate the apperarnce and disapearnce of the division contents("tab-contents) on every action click on the tablinks.    
-          3. External links
+
+            3. External links
 The html documents contain external links to our emails, our downloadable CVs, github repositories with our current progress and our telephone numbers.           
           
 
