@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta http-equiv="CONTENT-TYPE" content="text/html"; charset=UTF-8/>
+        <meta name="veiwport"content="width=device-width,initial-scale=1"/>
+      <title>PLP hackathon Portfolio</title>
+     
+
+  
+      <div class="top">
+     <p>
+      <h2> Portfolio.
+    <a href="myCV.docx"><button class="button-head">DOWNLOAD CV</button></a>
+     </p>
+     </h2>
+      </div>
+    </head> 
+<link rel="stylesheet" href="portfolio.css">
+
+        <div class="tab-container">
+          <div class="tablinks"><img  src="download.jpg"/></div>
+          <!-- opentab() in the div class tablinks calls the script funtion to affect the tablinks  -->
+
+        <div class="tablinks" onclick="opentab('about')"><f>About me</f></div>
+        <div class="tablinks" onclick="opentab('Education')"><f>Education</f></div>
+        <div class="tablinks" onclick="opentab('interests')"><f>Interests</f></div>
+        <div class="tablinks" onclick="opentab('projects')"><f>Projects</f></div>
+        <div class="tablinks" onclick="opentab('contacts')"><f>Contact Me</f></div>
+       </div>              
+ <!--Tab content--> 
+      <!-- class active-tab symbolizes a selected tab. -->
+       
+      <div id="open" onloadstart="hide('open')" class="default">
+        <p style="font-weight: 50;">Hello!Welcome to my Portfolio
+            <p>Salome Ogeya<br>
+             Frontend developer.</p>
+            
+        
+      </div>
+<div id="about"class="tab-content"  >
+      <h2>About Me:</h2>
+     <p>Hi! I'm Salome, As a passionate and detail-oriented front-end developer, I specialize in creating visually appealing and highly functional web interfaces that deliver seamless user experiences. With a strong foundation in HTML and CSS, and a knack for styling and structuring webpages, I thrive on translating complex ideas into clean, responsive designs.
+      </p>
+        
+</div>
+      <div id="Education" class="tab-content" >
+           <p><h2>Educational background</h2>
+           I am currently a student in Kirinyaga University studying a course in Bachelor of Science in Software Engineering<br>
+           Expected to graduate in the year 2028
+           <a href="myCV.docx" target="_blank">Download CV</a>
+          </p>
+      </div>
+      <div id="interests" class="tab-content">
+        <h2>Interests</h2>
+        Web Development: Exploring modern frameworks and best practices.<br>
+        Mobile Application development: Passionate about designing and developing mobile applications that enhance user experience and solve real-world problems. Enthusiastic about exploring emerging technologies, including cross-platform frameworks like Flutter and React Native, to create efficient and engaging apps. Continuously seeking opportunities to learn about app optimization, user interface design, and seamless backend integration to deliver cutting-edge mobile solutions.
+    
+    </p>
+      </div>
+      <div id="projects" class="tab-content">    
+        <p>
+            <h2> Projects</h2>
+            <ol type="1" >
+             <li><b><a href="https://github.com/sally407/Restaurant-website.git"> Project 1:</b></a>
+              The project in development is an interactive webpage for a Restaurant Website developed using  HTML and Css languages. 
+              A visually appealing landing page showcasing the restaurant's name, logo, and key highlights, such as signature dishes or promotions.  
+              Menu: A dedicated section or page displaying the restaurant's menu, often with item descriptions, prices, and images.  
+         </p>
+      </div>
+      
+        </div>
+        <div id="contacts" class="tab-content">    
+          <p>
+            <p>Feel free to reach out to me through:</p>
+             <div class="row">
+               <div class="column"> Contact me via! Email:
+                 <a href="mailto: salomeogeya@gmail.com">Email</a>
+             </div>
+             <div class="column">
+             Telephone: 
+             <a href="tel:+254718097169">0718097169</a>
+             </div>
+             </div>
+             <div class="row">
+               <div class="column">
+             Github profile:
+             <a href="https://github.com/sally407"> Sally407 </a>
+            </div>
+            <div class="column">
+             LinkedIn follow me: 
+             <a href="">Fadhili Mumo</a>
+             </div>
+             </div>
+            
+             </div>
+        
+    <footer position="fixed"><p>&copy; 2025 My Portfolio | <a href="https://github.com/sally407" target="_blank">GitHub</a> | <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></p></footer>
+
+        </p>
+</div>
+<!-- creating a function called opentab with parameters (tabId) -->
+<script>              
+                  function opentab(tabId){
+                   // Decalring a variable and storing the tabcontent value into it using method document.getElementsByClassName() -->
+                      var tabContents=document.getElementsByClassName('tab-content');
+                      var hide=document.getElementsByClassName('default');
+                      
+                        //incrementing the value of the tab dispaly on each click using the for function
+                        //assigning the value of i to the tabContents and hidding the previous values of the 
+                        //[i] containing the tab contents using tabContents[i].style.display='none'; -->  
+                      for(var i=0;i<tabContents.length; i++){
+                            tabContents[i].style.display='none';
+                            
+                       }
+
+                       for(var i=0;i<hide.length; i++){
+                        hide[i].style.display='none';
+                   }
+
+                        var tabs=document.getElementsByClassName('active-tab');
+                        //incrementing the value of the tab display on each click using the for function
+                        //assigning the value of i to the tabContents and removing the current content of active tab of the 
+                        for(var i=0;i<tabs.length;i++){
+                            tabs[1].classList.remove('tab-content');
+                        }
+                        document.getElementById(tabId).style.display='block';
+                        
+                        //creating the connection between the function and the onlick action listerner.
+                        document.querySelector('onclick="openTab(\''+tabId+'\')"]').classList.add('active-tab');
+
+                    }
+                    function hide(){
+                      if(opentab(tabId)){
+                        document.getElementById('open').style.display='none'
+                      }
+
+                    }
+            </script>
+         
+         
+          
+    
+    </div>
+  
+        </body> 
+</html>
+
