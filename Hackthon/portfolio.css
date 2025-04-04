@@ -1,0 +1,117 @@
+html{
+  background-color: rgb(157, 172, 182);
+  font-size: large;
+  
+  
+}
+.top{
+  position: relative;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: rgb(29, 36, 83);
+  color: wheat;
+}
+h2{
+  padding-left: 50px;
+}
+.tab-content{
+  border-radius: 4px;
+  background-color: rgb(186, 184, 206);
+  padding: 5% 10% 10%;
+  align-items: flex-start;
+  }
+
+.column{
+  float: left;
+  width: 40%;
+  padding: 40px;
+  height: 10px;
+ 
+}
+.row{
+  display: flex;
+}
+.b1{
+  margin-left: 50px;
+ }
+.default{
+  background-color: rgb(105, 104, 145);
+  margin-top: 60px;
+  margin-left: 300px;
+  margin-right: 60px;
+  padding: 50px 50px 50px 50px;
+  color: wheat;
+  font-family: 'Times New Roman', Times, serif;
+  font-size:40px;
+  font-weight: 900;
+}
+.tab-container{
+  font-size: 20px;
+  position: absolute;
+  background-color: rgb(48, 58, 88);
+  border-radius:2px;
+  border: 3px solid rgb(62, 90, 117);
+  padding: 20px 20px 60px 20px;
+  color: antiquewhite;
+  font-family: 'Times New Roman', Times;
+  height: 100%;
+  float: left;
+
+    box-sizing: border-box;
+  }
+.tab-container :hover{
+  cursor:hand;
+  color:rgb(165, 163, 42);
+  font-size: larger;
+}
+.tablinks{
+  cursor: pointer;
+  padding-top: 30px;
+  color:white black; 
+}
+f{
+   font-weight: 500;
+   color: wheat;
+}
+a{
+  color: wheat blue;
+  font-family: Cambria, Cochin, Georgia, Times, serif;
+}.h3{
+  color: white black;
+  font-size: 19px;
+  margin-bottom: 2px;
+}
+.b1{
+  line-height: 20px;
+}
+.tab-content{
+  padding-left: 30px;
+  margin: 20px 20px 20px 200px;
+  display: none;
+  line-height:20px ;
+
+}p{
+  position: relative;
+}
+.button-head{
+  color: rgb(235, 218, 187);
+  background-color: rgb(29, 29, 77);  
+  border: none;
+ padding:15px;
+  border-radius: 20px;
+  float:right;
+}
+.button-head :hover{
+  cursor: hand;
+  background-color: rgb(42, 76, 114);
+  color: rgb(165, 163, 42);
+  font-size: large;
+}
+img{
+  width:90px;
+  height: 90px;
+  border-radius:50%;
+  overflow: hidden;
+  border-top-left-radius:50% 50%;
+  border-top-right-radius: 50%;
+}
